@@ -14,6 +14,7 @@
 		1F9D13251FF68F4D00AD3C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */; };
 		1F9D13301FF68F4D00AD3C41 /* bamboozeldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D132F1FF68F4D00AD3C41 /* bamboozeldTests.swift */; };
 		1F9D133B1FF68F4D00AD3C41 /* bamboozeldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D133A1FF68F4D00AD3C41 /* bamboozeldUITests.swift */; };
+		FEB6C1FD1FF739C3000A289B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1F9D13361FF68F4D00AD3C41 /* bamboozeldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bamboozeldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9D133A1FF68F4D00AD3C41 /* bamboozeldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bamboozeldUITests.swift; sourceTree = "<group>"; };
 		1F9D133C1FF68F4D00AD3C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				1F9D131E1FF68F4D00AD3C41 /* Main.storyboard */,
 				1F9D13211FF68F4D00AD3C41 /* Assets.xcassets */,
 				1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */,
+				FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */,
 				1F9D13261FF68F4D00AD3C41 /* Info.plist */,
 			);
 			path = bamboozeld;
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEB6C1FD1FF739C3000A289B /* LoginViewController.swift in Sources */,
 				1F9D131D1FF68F4C00AD3C41 /* ViewController.swift in Sources */,
 				1F9D131B1FF68F4C00AD3C41 /* AppDelegate.swift in Sources */,
 			);
