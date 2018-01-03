@@ -7,19 +7,42 @@
 //
 
 import UIKit
-
+import Parse
 
 class LoginViewController: UIViewController {
+    //outlets
+    @IBOutlet weak var usernameLabel: UITextField!
+    @IBOutlet weak var passwordLabel: UITextField!
     
-    //actions
-    @IBAction func onLogin(_ sender: Any) {
-        performSegue(withIdentifier: "loginSegue", sender: nil)
+    @IBAction func registerUser(_ sender: Any) {
+        // initialize a user object
+        let newUser = PFUser()
+        
+        // set user properties
+        newUser.username = usernameLabel.text
+        newUser.password = passwordLabel.text
+        
+        // call sign up function on the object
+        newUser.signUpInBackground { (success: Bool, error: Error?) in
+            if let error = error {
+                print(error.localizedDescription)
+            } else {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+        }
     }
-    
-
-    
-    
-    
+    @IBAction func loginUser(_ sender: Any) {
+        let username = usernameLabel.text ?? ""
+        let password = passwordLabel.text ?? ""
+        
+        PFUser.logInWithUsername(inBackground: username, password: password) { (user: PFUser?, error: Error?) in
+            if let error = error {
+                print("User log in failed: \(error.localizedDescription)")
+            } else {
+                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+            }
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -14,6 +14,7 @@
 		1F9D13251FF68F4D00AD3C41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */; };
 		1F9D13301FF68F4D00AD3C41 /* bamboozeldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D132F1FF68F4D00AD3C41 /* bamboozeldTests.swift */; };
 		1F9D133B1FF68F4D00AD3C41 /* bamboozeldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F9D133A1FF68F4D00AD3C41 /* bamboozeldUITests.swift */; };
+		1FDD4CDF1FFD45E600784882 /* RecentsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDD4CDE1FFD45E600784882 /* RecentsCell.swift */; };
 		2793B84CB5F184EF0FD384DF /* Pods_bamboozeldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE1FB65F1B5B99CB0F73F0 /* Pods_bamboozeldUITests.framework */; };
 		B7308A4BA1DB4181E3ADCB38 /* Pods_bamboozeld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668EDA10CF94769D8B93FFAB /* Pods_bamboozeld.framework */; };
 		DAEE62F7509CA4791E924966 /* Pods_bamboozeldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85751ABC264803DF7A0E203 /* Pods_bamboozeldTests.framework */; };
@@ -59,6 +60,7 @@
 		1F9D13361FF68F4D00AD3C41 /* bamboozeldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bamboozeldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F9D133A1FF68F4D00AD3C41 /* bamboozeldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bamboozeldUITests.swift; sourceTree = "<group>"; };
 		1F9D133C1FF68F4D00AD3C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FDD4CDE1FFD45E600784882 /* RecentsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsCell.swift; sourceTree = "<group>"; };
 		668EDA10CF94769D8B93FFAB /* Pods_bamboozeld.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboozeld.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68C659D2A2F42D72784611BE /* Pods-bamboozeld.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboozeld.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bamboozeld/Pods-bamboozeld.debug.xcconfig"; sourceTree = "<group>"; };
 		9E7E22D1E11C774495644EF1 /* Pods-bamboozeldTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboozeldTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-bamboozeldTests/Pods-bamboozeldTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */,
 				FEB6C2041FFCB5DA000A289B /* ViewControllers */,
 				1F9D13261FF68F4D00AD3C41 /* Info.plist */,
+				1FDD4CDE1FFD45E600784882 /* RecentsCell.swift */,
 			);
 			path = bamboozeld;
 			sourceTree = "<group>";
@@ -485,6 +488,7 @@
 			files = (
 				FEB6C1FD1FF739C3000A289B /* LoginViewController.swift in Sources */,
 				FEB6C2061FFCBB14000A289B /* CreateDrinkViewController.swift in Sources */,
+				1FDD4CDF1FFD45E600784882 /* RecentsCell.swift in Sources */,
 				FEB6C2081FFCBC1A000A289B /* SearchViewController.swift in Sources */,
 				FEB6C2011FFCB5C4000A289B /* RecentViewController.swift in Sources */,
 				1F9D131D1FF68F4C00AD3C41 /* ViewController.swift in Sources */,
