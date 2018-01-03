@@ -6,6 +6,7 @@ target 'bamboozeld' do
   use_frameworks!
 
   # Pods for bamboozeld
+  pod 'Parse'
 
   target 'bamboozeldTests' do
     inherit! :search_paths
