@@ -8,7 +8,9 @@
 
 import UIKit
 
-class RecentViewController: UIViewController {
+class RecentViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    //Outlets
+    @IBOutlet weak var tableView: UITableView!
     
     //Actions
     @IBAction func onDone(_ sender: Any) {
@@ -20,8 +22,19 @@ class RecentViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RecentsCell", for: indexPath) as! RecentsCell
+        return cell
     }
 
     override func didReceiveMemoryWarning() {

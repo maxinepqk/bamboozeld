@@ -24,6 +24,7 @@
 		FEB6C2031FFCB5D3000A289B /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C2021FFCB5D3000A289B /* FavoriteViewController.swift */; };
 		FEB6C2061FFCBB14000A289B /* CreateDrinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C2051FFCBB14000A289B /* CreateDrinkViewController.swift */; };
 		FEB6C2081FFCBC1A000A289B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C2071FFCBC1A000A289B /* SearchViewController.swift */; };
+		FEB6C20A1FFE1284000A289B /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C2091FFE1284000A289B /* FavoritesCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		FEB6C2021FFCB5D3000A289B /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
 		FEB6C2051FFCBB14000A289B /* CreateDrinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDrinkViewController.swift; sourceTree = "<group>"; };
 		FEB6C2071FFCBC1A000A289B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		FEB6C2091FFE1284000A289B /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				1F9D131E1FF68F4D00AD3C41 /* Main.storyboard */,
 				1F9D13211FF68F4D00AD3C41 /* Assets.xcassets */,
 				1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */,
+				FEB6C2091FFE1284000A289B /* FavoritesCell.swift */,
 				FEB6C2041FFCB5DA000A289B /* ViewControllers */,
 				1F9D13261FF68F4D00AD3C41 /* Info.plist */,
 				1FDD4CDE1FFD45E600784882 /* RecentsCell.swift */,
@@ -489,6 +492,7 @@
 				FEB6C1FD1FF739C3000A289B /* LoginViewController.swift in Sources */,
 				FEB6C2061FFCBB14000A289B /* CreateDrinkViewController.swift in Sources */,
 				1FDD4CDF1FFD45E600784882 /* RecentsCell.swift in Sources */,
+				FEB6C20A1FFE1284000A289B /* FavoritesCell.swift in Sources */,
 				FEB6C2081FFCBC1A000A289B /* SearchViewController.swift in Sources */,
 				FEB6C2011FFCB5C4000A289B /* RecentViewController.swift in Sources */,
 				1F9D131D1FF68F4C00AD3C41 /* ViewController.swift in Sources */,
