@@ -7,6 +7,7 @@ target 'bamboozeld' do
 
   # Pods for bamboozeld
   pod 'Parse'
+  pod ‘Eureka’
 
   target 'bamboozeldTests' do
     inherit! :search_paths

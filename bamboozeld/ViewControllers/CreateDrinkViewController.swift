@@ -10,13 +10,16 @@ import UIKit
 
 class CreateDrinkViewController: UIViewController {
     
+    
     //Action
     @IBAction func onCancel(_ sender: Any) {
         self.dismiss(animated: true) {
             //canceled drink menu
         }
     }
-    
+    @IBAction func onTap(_ sender: Any) {
+        view.endEditing(true)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
