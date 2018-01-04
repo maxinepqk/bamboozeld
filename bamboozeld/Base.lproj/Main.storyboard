@@ -135,7 +135,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibT-gi-XKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="885"/>
+            <point key="canvasLocation" x="-226" y="1018"/>
         </scene>
         <!--Create Drink View Controller-->
         <scene sceneID="9b6-l5-NW6">
@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jL8-tf-JUA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="885"/>
+            <point key="canvasLocation" x="820" y="973"/>
         </scene>
         <!--Favorite View Controller-->
         <scene sceneID="gji-49-JSU">
@@ -185,7 +185,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mWh-qp-DTU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1953" y="819"/>
+            <point key="canvasLocation" x="1996" y="1018"/>
         </scene>
     </scenes>
 </document>
