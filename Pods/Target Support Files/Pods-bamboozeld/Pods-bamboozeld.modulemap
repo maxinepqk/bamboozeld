@@ -1,0 +1,6 @@
+framework module Pods_bamboozeld {
+  umbrella header "Pods-bamboozeld-umbrella.h"
+
+  export *
+  module * { export * }
+}
