@@ -12,13 +12,6 @@ class RecentViewController: UIViewController, UITableViewDelegate, UITableViewDa
     //Outlets
     @IBOutlet weak var tableView: UITableView!
     
-    //Actions
-    @IBAction func onDone(_ sender: Any) {
-        self.dismiss(animated: true) {
-            //done
-        }
-    }
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()

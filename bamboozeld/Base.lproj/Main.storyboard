@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DKK-nG-ePe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -93,91 +93,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XSO-sY-ETJ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="content border" translatesAutoresizingMaskIntoConstraints="NO" id="wjU-cp-G2v">
+                                <rect key="frame" x="13" y="170" width="349" height="487"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Qe-ny-7iP">
-                                <rect key="frame" x="156" y="467" width="62" height="30"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" image="No drink pending" translatesAutoresizingMaskIntoConstraints="NO" id="etN-K7-78c">
+                                <rect key="frame" x="16" y="34" width="338" height="42"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="soQ-bV-769" userLabel="Tab Bar Controller">
+                                <rect key="frame" x="0.0" y="92" width="375" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.053852187650000001" green="0.57469263159999995" blue="0.72340381149999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Favorites">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onFavorite:" destination="DKK-nG-ePe" eventType="touchUpInside" id="Bae-1w-PVf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nf3-E8-bO9">
-                                <rect key="frame" x="152" y="535" width="71" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.053852187650000001" green="0.57469263159999995" blue="0.72340381149999999" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="New Drink">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onNewDrink:" destination="DKK-nG-ePe" eventType="touchUpInside" id="hOV-vd-d08"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SuN-jI-Rix">
-                                <rect key="frame" x="159" y="410" width="56" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.053852187650561573" green="0.57469263160954975" blue="0.72340381145477295" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Recents">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="onRecent:" destination="DKK-nG-ePe" eventType="touchUpInside" id="ZU7-D9-RuT"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wey-EP-5Pe" userLabel="Recents">
+                                        <rect key="frame" x="16" y="-4" width="72" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="recents"/>
+                                        <state key="selected" image="recents-1"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="DKK-nG-ePe" eventType="touchUpInside" id="mhz-6x-lgN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tf-WX-jte" userLabel="Favourites">
+                                        <rect key="frame" x="106" y="-4" width="72" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="favourites"/>
+                                        <state key="selected" image="favourites-1"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="DKK-nG-ePe" eventType="touchUpInside" id="kmJ-JR-Yts"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zps-0c-zPZ" userLabel="New">
+                                        <rect key="frame" x="197" y="-4" width="72" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="new"/>
+                                        <state key="selected" image="new-1"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="DKK-nG-ePe" eventType="touchUpInside" id="tXu-TX-ceu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYh-O9-voB" userLabel="Search">
+                                        <rect key="frame" x="289" y="-4" width="72" height="72"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="search"/>
+                                        <state key="selected" image="search-1"/>
+                                        <connections>
+                                            <action selector="didPressTab:" destination="DKK-nG-ePe" eventType="touchUpInside" id="MEY-lA-lOG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xWq-Py-APb" userLabel="Content View">
+                                <rect key="frame" x="17" y="195" width="342" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="4p8-HL-Sql"/>
                     </view>
                     <connections>
-                        <segue destination="0bu-ov-scU" kind="presentation" identifier="recentSegue" id="SVJ-fc-iI7"/>
-                        <segue destination="YgY-cA-5hd" kind="presentation" identifier="favoriteSegue" id="p6O-jP-661"/>
-                        <segue destination="RBg-gM-D15" kind="presentation" identifier="createSegue" id="bof-gZ-SaK"/>
-                        <segue destination="nOG-8e-zYI" kind="presentation" identifier="searchSegue" id="VG9-Ci-Ucw"/>
+                        <outlet property="contentView" destination="xWq-Py-APb" id="Kof-Ng-WPG"/>
+                        <outletCollection property="buttons" destination="wey-EP-5Pe" collectionClass="NSMutableArray" id="85d-Dy-Ugy"/>
+                        <outletCollection property="buttons" destination="1tf-WX-jte" collectionClass="NSMutableArray" id="2tX-ik-ryb"/>
+                        <outletCollection property="buttons" destination="Zps-0c-zPZ" collectionClass="NSMutableArray" id="MyU-eb-Y88"/>
+                        <outletCollection property="buttons" destination="cYh-O9-voB" collectionClass="NSMutableArray" id="9pr-AM-C99"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qPP-tm-9Zo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="820" y="33"/>
+            <point key="canvasLocation" x="820" y="32.833583208395808"/>
         </scene>
         <!--Recent View Controller-->
         <scene sceneID="gRl-wh-sN9">
             <objects>
-                <viewController id="0bu-ov-scU" customClass="RecentViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecentViewController" id="0bu-ov-scU" customClass="RecentViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pgG-Dr-Ge3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z6X-aa-f0v">
-                                <rect key="frame" x="21" y="20" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Done"/>
-                                <connections>
-                                    <action selector="onDone:" destination="0bu-ov-scU" eventType="touchUpInside" id="FmP-G6-Z0l"/>
-                                </connections>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="glu-fV-6Bz">
-                                <rect key="frame" x="0.0" y="87" width="375" height="538"/>
+                                <rect key="frame" x="16" y="0.0" width="343" height="467"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecentsCell" id="vzq-h2-K3B" customClass="RecentsCell" customModule="bamboozeld" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vzq-h2-K3B" id="HDk-m2-7O9">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RECENT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5V-LC-TUI">
-                                                    <rect key="frame" x="165" y="11" width="65" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="mojito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5V-LC-TUI" userLabel="drink">
+                                                    <rect key="frame" x="15" y="10" width="65" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <color key="textColor" red="0.31115090847015381" green="0.67261296510696411" blue="0.98592907190322876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="white rum, lime juice, mint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eJh-WN-8Xd" userLabel="description">
+                                                    <rect key="frame" x="88" y="12" width="280" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" red="0.60778355598449707" green="0.60788613557815552" blue="0.60776180028915405" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -200,7 +219,7 @@
         <!--Search View Controller-->
         <scene sceneID="8t4-85-zkX">
             <objects>
-                <viewController id="nOG-8e-zYI" customClass="SearchViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchViewController" id="nOG-8e-zYI" customClass="SearchViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LG7-bO-dlm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,7 +244,7 @@
         <!--Create Drink View Controller-->
         <scene sceneID="9b6-l5-NW6">
             <objects>
-                <viewController id="RBg-gM-D15" customClass="CreateDrinkViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateDrinkViewController" id="RBg-gM-D15" customClass="CreateDrinkViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sK9-da-PMB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -275,12 +294,12 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="820" y="972.86356821589209"/>
+            <point key="canvasLocation" x="820" y="885"/>
         </scene>
         <!--Favorite View Controller-->
         <scene sceneID="gji-49-JSU">
             <objects>
-                <viewController id="YgY-cA-5hd" customClass="FavoriteViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FavoriteViewController" id="YgY-cA-5hd" customClass="FavoriteViewController" customModule="bamboozeld" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CGg-na-h6C">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -333,7 +352,17 @@
     <resources>
         <image name="Background" width="375" height="667"/>
         <image name="Login" width="139" height="42"/>
+        <image name="No drink pending" width="338" height="42"/>
         <image name="Register" width="139" height="42"/>
         <image name="bamboozeld" width="231" height="38"/>
+        <image name="content border" width="349" height="487"/>
+        <image name="favourites" width="76" height="76"/>
+        <image name="favourites-1" width="72" height="72"/>
+        <image name="new" width="76" height="76"/>
+        <image name="new-1" width="72" height="72"/>
+        <image name="recents" width="76" height="76"/>
+        <image name="recents-1" width="72" height="72"/>
+        <image name="search" width="76" height="76"/>
+        <image name="search-1" width="72" height="72"/>
     </resources>
 </document>

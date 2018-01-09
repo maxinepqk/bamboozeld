@@ -136,9 +136,9 @@
 				1F9D13211FF68F4D00AD3C41 /* Assets.xcassets */,
 				1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */,
 				FEB6C2091FFE1284000A289B /* FavoritesCell.swift */,
+				1FDD4CDE1FFD45E600784882 /* RecentsCell.swift */,
 				FEB6C2041FFCB5DA000A289B /* ViewControllers */,
 				1F9D13261FF68F4D00AD3C41 /* Info.plist */,
-				1FDD4CDE1FFD45E600784882 /* RecentsCell.swift */,
 			);
 			path = bamboozeld;
 			sourceTree = "<group>";
