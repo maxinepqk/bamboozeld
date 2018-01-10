@@ -18,6 +18,7 @@
 		2793B84CB5F184EF0FD384DF /* Pods_bamboozeldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE1FB65F1B5B99CB0F73F0 /* Pods_bamboozeldUITests.framework */; };
 		B7308A4BA1DB4181E3ADCB38 /* Pods_bamboozeld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668EDA10CF94769D8B93FFAB /* Pods_bamboozeld.framework */; };
 		DAEE62F7509CA4791E924966 /* Pods_bamboozeldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85751ABC264803DF7A0E203 /* Pods_bamboozeldTests.framework */; };
+		FE167AD02005D0460036D8C9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE167ACF2005D0460036D8C9 /* SettingsViewController.swift */; };
 		FE5195152005B7F900E8E576 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5195142005B7F800E8E576 /* Setting.swift */; };
 		FEB6C1FD1FF739C3000A289B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */; };
 		FEB6C1FF1FFCB50A000A289B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C1FE1FFCB50A000A289B /* MainViewController.swift */; };
@@ -69,6 +70,7 @@
 		C11B253177B16D2BB4E8C2BD /* Pods-bamboozeldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboozeldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bamboozeldTests/Pods-bamboozeldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BE1FB65F1B5B99CB0F73F0 /* Pods_bamboozeldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboozeldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85751ABC264803DF7A0E203 /* Pods_bamboozeldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboozeldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE167ACF2005D0460036D8C9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FE5195142005B7F800E8E576 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FEB6C1FE1FFCB50A000A289B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				FEB6C1FE1FFCB50A000A289B /* MainViewController.swift */,
 				FEB6C2071FFCBC1A000A289B /* SearchViewController.swift */,
 				FEB6C2001FFCB5C4000A289B /* RecentViewController.swift */,
+				FE167ACF2005D0460036D8C9 /* SettingsViewController.swift */,
 				FEB6C2051FFCBB14000A289B /* CreateDrinkViewController.swift */,
 				FEB6C2021FFCB5D3000A289B /* FavoriteViewController.swift */,
 				FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */,
@@ -505,6 +508,7 @@
 				1F9D131B1FF68F4C00AD3C41 /* AppDelegate.swift in Sources */,
 				FEB6C2031FFCB5D3000A289B /* FavoriteViewController.swift in Sources */,
 				FEB6C1FF1FFCB50A000A289B /* MainViewController.swift in Sources */,
+				FE167AD02005D0460036D8C9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
