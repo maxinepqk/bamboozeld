@@ -18,6 +18,7 @@
 		2793B84CB5F184EF0FD384DF /* Pods_bamboozeldUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D1BE1FB65F1B5B99CB0F73F0 /* Pods_bamboozeldUITests.framework */; };
 		B7308A4BA1DB4181E3ADCB38 /* Pods_bamboozeld.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668EDA10CF94769D8B93FFAB /* Pods_bamboozeld.framework */; };
 		DAEE62F7509CA4791E924966 /* Pods_bamboozeldTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85751ABC264803DF7A0E203 /* Pods_bamboozeldTests.framework */; };
+		FE5195152005B7F900E8E576 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5195142005B7F800E8E576 /* Setting.swift */; };
 		FEB6C1FD1FF739C3000A289B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */; };
 		FEB6C1FF1FFCB50A000A289B /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C1FE1FFCB50A000A289B /* MainViewController.swift */; };
 		FEB6C2011FFCB5C4000A289B /* RecentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB6C2001FFCB5C4000A289B /* RecentViewController.swift */; };
@@ -68,6 +69,7 @@
 		C11B253177B16D2BB4E8C2BD /* Pods-bamboozeldTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-bamboozeldTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-bamboozeldTests/Pods-bamboozeldTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D1BE1FB65F1B5B99CB0F73F0 /* Pods_bamboozeldUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboozeldUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D85751ABC264803DF7A0E203 /* Pods_bamboozeldTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_bamboozeldTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5195142005B7F800E8E576 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		FEB6C1FC1FF739C3000A289B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FEB6C1FE1FFCB50A000A289B /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FEB6C2001FFCB5C4000A289B /* RecentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentViewController.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				1F9D131A1FF68F4C00AD3C41 /* AppDelegate.swift */,
 				1F9D131C1FF68F4C00AD3C41 /* ViewController.swift */,
 				1F9D131E1FF68F4D00AD3C41 /* Main.storyboard */,
+				FE5195142005B7F800E8E576 /* Setting.swift */,
 				1F9D13211FF68F4D00AD3C41 /* Assets.xcassets */,
 				1F9D13231FF68F4D00AD3C41 /* LaunchScreen.storyboard */,
 				FEB6C2091FFE1284000A289B /* FavoritesCell.swift */,
@@ -497,6 +500,7 @@
 				FEB6C20A1FFE1284000A289B /* FavoritesCell.swift in Sources */,
 				FEB6C2081FFCBC1A000A289B /* SearchViewController.swift in Sources */,
 				FEB6C2011FFCB5C4000A289B /* RecentViewController.swift in Sources */,
+				FE5195152005B7F900E8E576 /* Setting.swift in Sources */,
 				1F9D131D1FF68F4C00AD3C41 /* ViewController.swift in Sources */,
 				1F9D131B1FF68F4C00AD3C41 /* AppDelegate.swift in Sources */,
 				FEB6C2031FFCB5D3000A289B /* FavoriteViewController.swift in Sources */,
@@ -668,10 +672,10 @@
 			baseConfigurationReference = 68C659D2A2F42D72784611BE /* Pods-bamboozeld.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F5LB3XJ7QM;
+				DEVELOPMENT_TEAM = 5JTWQYEJ7H;
 				INFOPLIST_FILE = bamboozeld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.build18.bamboozeld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -683,10 +687,10 @@
 			baseConfigurationReference = 1DBBF733253A08A0DDA1A00B /* Pods-bamboozeld.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F5LB3XJ7QM;
+				DEVELOPMENT_TEAM = 5JTWQYEJ7H;
 				INFOPLIST_FILE = bamboozeld/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.build18.bamboozeld;
+				PRODUCT_BUNDLE_IDENTIFIER = com.claire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;

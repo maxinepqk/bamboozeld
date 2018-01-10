@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 class MainViewController: UIViewController {
     
@@ -46,6 +47,10 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //makeSetting()
+        retrieveSetting()
+        
+        
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         recentViewController = storyboard.instantiateViewController(withIdentifier: "RecentViewController")
         favoriteViewController = storyboard.instantiateViewController(withIdentifier: "FavoriteViewController")
@@ -64,6 +69,36 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func makeSetting(){
+        let drinklist = ["vodka", "tequila", "orange juice", "cranberry juice", "coke"]
+        Setting.createSetting(drinks: drinklist) { (success: Bool, error: Error?) in
+            if success {
+                print("saved correctly")
+            } else {
+                print("nope")
+            }
+        }
+    }
+    
+    func retrieveSetting(){
+        let id = "default"
+        let query = PFQuery(className: "Setting")
+        query.whereKey("id", equalTo: id)
+        query.findObjectsInBackground { (settings: [PFObject]?, error: Error?) in
+            if error == nil {
+                let set = settings![0]
+                print(set["drink_three"])
+                print(set["drink_one"])
+                print(set["drink_two"])
+                print(set["drink_three"])
+                print(set["drink_four"])
+                print(set["drink_five"])
+            } else {
+                print(error ?? "ERROR")
+            }
+            
+        }
+    }
 
     /*
     // MARK: - Navigation
