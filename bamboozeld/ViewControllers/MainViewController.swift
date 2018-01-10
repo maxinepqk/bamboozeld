@@ -22,6 +22,8 @@ class MainViewController: UIViewController {
     
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
+    
+    var sett: PFObject!
    
     // setting view controller and button states
     @IBAction func didPressTab(_ sender: UIButton) {
@@ -87,16 +89,25 @@ class MainViewController: UIViewController {
         query.findObjectsInBackground { (settings: [PFObject]?, error: Error?) in
             if error == nil {
                 let set = settings![0]
+                self.sett = set
                 print(set["drink_three"])
                 print(set["drink_one"])
                 print(set["drink_two"])
                 print(set["drink_three"])
                 print(set["drink_four"])
                 print(set["drink_five"])
+                self.editSettings()
             } else {
                 print(error ?? "ERROR")
             }
             
+        }
+    }
+    
+    func editSettings(){
+        sett?.setObject("rum", forKey: "drink_three")
+        sett?.saveInBackground { (success: Bool, error: Error?) in
+            print("edited")
         }
     }
 
